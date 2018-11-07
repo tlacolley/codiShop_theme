@@ -34,6 +34,17 @@ header{
 
                 list-style: none;
                 justify-content: space-around;
+                li{
+                    margin: 2% 5%;
+                    width: auto;
+                    a{
+                        color: $headFontBase;
+
+                    }
+                }
+            }
+            .iconList{
+                width: 10%;
             }
     }
 
@@ -59,6 +70,9 @@ header{
     }
     .grid_no_animation figcaption {
     text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
 .wpb_slider_area .owl-theme .owl-nav{
