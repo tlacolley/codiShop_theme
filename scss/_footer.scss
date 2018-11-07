@@ -3,12 +3,13 @@
     background-color: $headerPrimary;
     padding: 3% 15%;
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns:  1fr;
     grid-gap: 3rem;
     section{
         text-align: start;
     }
     .helpFooter{
+        grid-row: 3;
         ul{
             list-style: none;
             padding: 0;
@@ -20,11 +21,15 @@
                     text-decoration: none;
                     color: $headFontBase;
                 }
+                a:hover{
+                    text-decoration: underline;
+                    color: grey;
+                }
             }
         }
     }
     .newsletterFooter{
-
+        grid-row: 1;
         input, button{
             width: 100%;
             height: 40px;
@@ -43,5 +48,29 @@
             border: 0px ;
 
         }
+        button:hover{
+            color: $headFontBase;
+            background-color: white;
+            border: 2px solid $headFontBase;
+
+        }
     }
+}
+
+
+@media screen and (min-width: 1200px){
+    .mainFooter{
+        grid-template-columns: repeat(3 , 1fr);
+        grid-gap: 3rem;
+        .helpFooter, .newsletterFooter , .aboutFooter{
+            grid-row: 1
+    }
+
+    }
+
+
+
+
+
+
 }
