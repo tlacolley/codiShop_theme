@@ -4,3 +4,12 @@ Theme Name:   CodiShop Theme
 Author:       tlacolley
 Description:  Theme woocommerce CodiShop
 */
+
+ @import "mixins";
+ @import "header";
+ @import "footer";
+ @import "main";
+
+body{
+    margin: 0;
+}

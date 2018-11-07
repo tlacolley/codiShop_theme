@@ -1,0 +1,74 @@
+@import "mixins";
+
+body{
+
+header{
+    background-color: $headerPrimary;
+    padding: 2%;
+    .mainNav{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        a{
+            text-decoration: none;
+        }
+        h1{
+            color: $headFontBase;
+            font-weight: bold;
+        }
+        .menu{
+            width: 100%;
+            li{
+                a{
+
+                color: black;
+                }
+            }
+        }
+            ul{
+                padding: 0;
+
+                display: flex;
+                flex-wrap: wrap;
+
+                list-style: none;
+                justify-content: space-around;
+            }
+    }
+
+    .wpb-woo-products-slider .wpb-wps-slider-item {
+        text-align: center;
+        img{
+        width: 50%;
+        max-width: 50%;
+        margin: auto;
+        }
+    }
+
+}
+
+}
+
+@media screen and (min-width: 1200px){
+body{
+
+    header{
+
+        .mainNav{
+            h1{
+                margin: 0;
+            }
+            flex-wrap: nowrap;
+            align-items: center;
+            .menu{
+                width: 40%;
+                li{
+                    margin: 0 2%;
+                }
+            }
+        }
+    }
+}
+
+}
