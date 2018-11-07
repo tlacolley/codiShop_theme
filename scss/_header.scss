@@ -39,12 +39,31 @@ header{
 
     .wpb-woo-products-slider .wpb-wps-slider-item {
         text-align: center;
+        margin: 2rem;
         img{
-        width: 50%;
-        max-width: 50%;
+
         margin: auto;
         }
     }
+    .wpb_slider_area figure{
+        display: flex;
+        justify-content: center;
+
+        .pro_title{
+            font-size: 3rem;
+        }
+        figcaption{
+            margin: 0 5%;
+
+        }
+    }
+    .grid_no_animation figcaption {
+    text-align: start;
+
+}
+.wpb_slider_area .owl-theme .owl-nav{
+    position: relative;
+}
 
 }
 

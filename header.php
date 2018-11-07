@@ -20,6 +20,6 @@
 
         </ul>
     </nav>
-    <?php echo do_shortcode('[wpb-product-slider product_type="category" category="17"]'); ?>
+    <?php echo do_shortcode('[wpb-product-slider product_type="category" nav="true" category="17"]'); ?>
 
 </header>
