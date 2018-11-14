@@ -1,19 +1,34 @@
 <?php
 
+
 get_header();
-// get_sidebar()
-echo do_shortcode('[wpb-product-slider product_type="category" nav="true" category="22"]');
+get_sidebar();
+
+ ?>
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+
+<?php
+
+        // Start the loop.
+
+        while ( have_posts() ) : the_post();
+        
 
 
+            the_title();
+            the_content();
+
+        // End the loop.
+        endwhile;
+ ?>
 
 
-include 'shop.php';
+    </main><!-- .site-main -->
+    </div><!-- .content-area -->
 
 
-
-
-
-
+<?php
 
 get_footer();
 
