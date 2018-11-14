@@ -36,8 +36,30 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
- ?>
 
+
+// ---------Single Product Hook-----------
+
+add_action( 'woocommerce_single_product_summary', 'codishop_add_price', 5 );
+ 
+function codishop_add_price() {
+echo '<p class="label_single_product"> Price:</p>';
+};
+
+
+add_action( 'woocommerce_single_product_summary', 'codishop_add_description', 10 );
+ 
+function codishop_add_description() {
+echo '<p class="label_description"> Description :</p>';
+}
+
+
+
+
+
+
+
+ ?>
 
 
 
