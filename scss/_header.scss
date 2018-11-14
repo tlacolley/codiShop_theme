@@ -9,10 +9,10 @@ header{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-
+        
         a{
             text-decoration: none;
-        }
+            color
         h1{
             color: $headFontBase;
             font-weight: bold;
@@ -21,7 +21,7 @@ header{
             width: 100%;
             li{
                 a{
-
+                
                 color: black;
                 }
             }
@@ -48,39 +48,21 @@ header{
             }
     }
 
-    .wpb-woo-products-slider .wpb-wps-slider-item {
-        text-align: center;
-        margin: 2rem;
-        img{
 
-        margin: auto;
-        }
-    }
-    .wpb_slider_area figure{
-        display: flex;
-        justify-content: center;
+}
 
-        .pro_title{
-            font-size: 3rem;
-        }
-        figcaption{
-            margin: 0 5%;
-
-        }
-    }
-    .grid_no_animation figcaption {
-    text-align: start;
+.wpb_slider_area .owl-theme .owl-nav{
+    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
 
 }
-.wpb_slider_area .owl-theme .owl-nav{
-    position: relative;
-}
 
+.wpb-woo-products-slider .wpb-wps-slider-item img {
+    width: 50%;
+    height: auto;
+    margin:auto;
 }
-
 }
 
 @media screen and (min-width: 1200px){
