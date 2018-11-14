@@ -13,7 +13,7 @@
 
     <nav class="mainNav">
         <a href="<?php echo home_url("") ?>"><h1>CodiShop</h1></a>
-        <?php wp_nav_menu() ?>
+        <?php wp_nav_menu(array('menu' => 'Header Menu',)) ?>
         <ul class="iconList">
             <li><a href="#"><i class="fas fa-user-astronaut"></i></a></li>
             <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>

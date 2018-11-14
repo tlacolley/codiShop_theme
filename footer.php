@@ -4,13 +4,11 @@
 <footer class="mainFooter">
     <section class="helpFooter">
         <h3>Help</h3>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Return Policy</a></li>
-            <li><a href="#">Contact</a></li>
 
-        </ul>
+        <?php 
+          wp_nav_menu(array('menu' => 'Footer Menu',)); ?>
+
+
     </section>
     <section class="aboutFooter">
         <h3><a href="#">About</a></h3>
